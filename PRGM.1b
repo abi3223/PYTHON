@@ -1,0 +1,21 @@
+val = int(input("Enter a value : "))
+str_val = str(val)
+if str_val == str_val[::-1]:
+  print("Palindrome")
+else:
+  print("Not Palindrome")
+for i in range(10):
+ if str_val.count(str(i)) > 0:
+  print(str(i),"appears", str_val.count(str(i)), "times");
+Output 
+Enter a value: 1234234 
+Not Palindrome 
+1 appears 1 time 
+2 appears 2 times 
+3 appears 2 times 
+4 appears 2 times 
+Enter a value: 12321 
+Palindrome 
+1 appears 2 times 
+2 appears 2 times 
+3 appears 1 time
